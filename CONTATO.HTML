@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title> Contato
+		 </title>
+		<link rel="stylesheet" type="text/css" href="bonitinho.css">
+	</head>
+
+	<body>
+		<header>
+
+				<nav> 
+					<div class="logo">
+						<img id=logo_img src="logo.png" alt="Foto de Perfil">
+					</div>
+					<ul>
+						<li class="perfil"><a href="HOME.html">INÍCIO</a></li>
+						<li class="perfil"><a href="PORTFOLIO.html">PORTFÓLIO</a></li>
+						<li class="perfil"><a href="PERFIL.html">SOBRE</a></li>
+						<li id="current" class="perfil"><a href="CONTATO.html">CONTATO</a></li>
+					</ul>
+				</nav>
+		</header>
+		<p id="contato">FORMULÁRIO DE CONTATO</p>
+		<form class = "formulario" action="/action_page.php">
+			
+			<label for="nome"> Nome Completo</label>
+			<input class="formcomponente" type="text" name="nome" id ="nome" onkeyup="valida(this)">
+			
+			<label for="email">E-mail</label>
+  			<input class="formcomponente" name="email" id="email" onkeyup="valida(this)">
+  			
+  			
+  			<label for="mensagem">Mensagem</label>
+  			<textarea class="formcomponente"></textarea>
+  			
+  			<button class ="formulario" name="enviar" type="enviar"> Enviar</button>
+  			<button class ="formulario" name ="redefinir" type="redefinir">Redefinir</button>
+		</form> 
+	</body>
+</html>
